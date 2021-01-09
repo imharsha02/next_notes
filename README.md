@@ -47,7 +47,7 @@ export default function Layout(){
 ### applying the layout to the application
 inside the components inside the pages folder,
 ```javascript
-import Layout from '../../layout.js'
+import Layout from '../../components/layout.js'
 export default function pageName(){
   <Layout>
   ...
