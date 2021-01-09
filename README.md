@@ -79,5 +79,6 @@ Note: The name of the class while assigning to jsx element must be styles.<class
 export default function App({ Component, pageProps }) {
   return <Component {...pageProps} />
 }
+
 ```
   
