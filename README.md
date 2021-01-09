@@ -69,4 +69,15 @@ return (
 ```
 Note: The name of the class while assigning to jsx element must be styles.<className> because we are importing 'styles' from the file which has the module.css extension
   
-  ###
+  ### Global styles to the app
+  the _app.js file in the pages folder provides the functionality specified in it to the entair application
+  The .css file can be created anywhere, but to apply the styles globally, import that file in the _app.js file only.
+  That is done by writing the following code in the _app.js file
+  ```javascript
+  import '../styles/global.css'
+
+export default function App({ Component, pageProps }) {
+  return <Component {...pageProps} />
+}
+```
+  
