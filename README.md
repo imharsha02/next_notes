@@ -23,3 +23,11 @@ Static assets like images must be inside the public folder (which is at the top 
 ```javascript
 <img src="/imgName.extension" alt="alternate text if image does not render"/>
 ```
+
+### Manipulate meta data (head part of the page)
+```javascript
+import Head from 'next/head'
+<Head>
+<title>page title</title>
+</Head>
+```
