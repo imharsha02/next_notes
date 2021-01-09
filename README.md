@@ -54,3 +54,19 @@ export default function pageName(){
   </Layout>
 }
 ```
+
+### defining styles to the Layout:
+1) Inside the components folder, create a layout.module.css file
+2) Inside this file, define wanted styles.
+3) Then, inside the layout.js file (present in the components folder),
+```javascript
+import styles from './layout.module.css'
+export default function Layout(children){
+return (
+<div className={styles.container}>{children}</div>
+)
+}
+```
+Note: The name of the class while assigning to jsx element must be styles.<className> because we are importing 'styles' from the file which has the module.css extension
+  
+  ###
