@@ -31,3 +31,26 @@ import Head from 'next/head'
 <title>page title</title>
 </Head>
 ```
+
+### layout for the application:
+1) Create a top level components folder.
+2) Now create a layout.js file inside the components folder.
+3) Inside this file, create a defaultly exported function which returns all the layout tag's children components in a div like this:
+```javascript
+export default function Layout(){
+  return (
+    <div>{children}</div>
+  )
+}
+```
+
+### applying the layout to the application
+inside the components inside the pages folder,
+```javascript
+import Layout from '../../layout.js'
+export default function pageName(){
+  <Layout>
+  ...
+  </Layout>
+}
+```
