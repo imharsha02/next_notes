@@ -29,3 +29,11 @@ const {params=[]} = router.query // destructuring the params and storing the ret
 
 Perform desaired operation on the array
 ```
+
+### Navigation between pages from client side
+```javascript
+import Link from 'next/link'
+...
+<Link href="<path to visit>"><a><clickable text></a></Link>
+```
+
