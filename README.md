@@ -47,3 +47,19 @@ The prop in the href of Link component is the formal parameter passed into the f
 Replaces the entair history back to the root home page insted of adding new route
 ```javascript
 <Link href="<path to navigate>" replace><a><clickable text></a></Link>
+```
+
+### Navigate bsed on event
+```javascript
+import {useRouter} from 'next/router'
+export default function (){
+...
+const router= useRouter();
+function handleClick(){
+router.push("<pathToRedirect>")
+}
+return (
+<Link href = "<path to redirect>"><button onClick = {handleClick}>button</button></Link>
+)
+}
+```
