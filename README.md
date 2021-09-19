@@ -75,8 +75,8 @@ export default function functionName ({arrayDestructureVariable}) {
 return (
  //jsx elements
  {
- use map function on the destructure variable that returns jsx elements with a key attribute which stores a uniqe value of every element in the array
- and display the content from the data fetched
+ //use map function on the destructure variable that returns jsx elements with a key attribute which stores a uniqe value of every element in the array
+ //and display the content from the data fetched
  }
 )
 }
