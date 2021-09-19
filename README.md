@@ -89,3 +89,42 @@ props:{
 }
 }
 }
+```
+
+### Statically generate dynamic pages
+```javascript
+export default function functionName ({arrayDestructureVariable}) {
+return (
+ //jsx elements
+ {
+ //use map function on the destructure variable that returns jsx elements with a key attribute which stores a uniqe value of every element in the array
+ //and display the content from the data fetched
+ }
+)
+}
+export async function getStaticProps(){
+const response = await fetch('<link of api endpoint>')
+const data = await response.json()
+return {
+props:{
+<propertyName>:data
+}
+}
+}
+export async function getStaticPaths(){
+return {
+  paths:[
+  {
+  params:{}
+  },
+  {
+  params:{}
+  },
+  {
+  params:{}
+  },...
+ ]
+}
+}
+/* The getStaticPaths() function specifies for what dynamic routes must the data be displayed. The dynamic routes are specified in the params object which is present in the array of objects that is being returned by the async function getStaticPaths */
+```
