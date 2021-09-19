@@ -10,7 +10,7 @@ Inside the pages directory, add a new file with '.js' extension. This will help 
 
 ### Dynamic routes
 Inside a folder in the pages directory.
-create a file, like, [pathVariable].js in that directory
+create a file: [pathVariable].js in that directory.
 Inside the file,
 ```javascript
 import {useRouter} from 'next/router'
