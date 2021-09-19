@@ -37,3 +37,8 @@ import Link from 'next/link'
 <Link href="<path to visit>"><a><clickable text></a></Link>
 ```
 
+### Navigating to dynamic routes
+```javascript
+<Link href=`folderName/prop`><a>Clickable text</a></Link>
+```
+The prop in the href of Link component is the formal parameter passed into the functional component
