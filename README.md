@@ -67,3 +67,5 @@ return (
 ### Custom 404 page
 Create a file in the pages directory named 404.js and a export a default function named pageNotFound with all that you want to display when a page is not found
 
+
+
