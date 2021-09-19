@@ -68,4 +68,24 @@ return (
 Create a file in the pages directory named 404.js and a export a default function named pageNotFound with all that you want to display when a page is not found
 
 
-
+### Statically fetching data
+Inside a file in the pages directory, create a functional component
+```javascript
+export default function functionName ({arrayDestructureVariable}) {
+return (
+ //jsx elements
+ {
+ use map function on the destructure variable that returns jsx elements with a key attribute which stores a uniqe value of every element in the array
+ and display the content from the data fetched
+ }
+)
+}
+export async function getStaticProps(){
+const response = await fetch('<link of api endpoint>')
+const data = await response.json()
+return {
+props:{
+<propertyName>:data
+}
+}
+}
