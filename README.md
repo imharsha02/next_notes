@@ -25,7 +25,7 @@ Inside the folder for dynamic routes inside the pages directory, create a file: 
 ```javascript
 import {useRouter} from 'next/router
 const router=useRouter();
-const {params[]} = router.query // destructuring the params and storing the returned content in the 'params' array
+const {params=[]} = router.query // destructuring the params and storing the returned content in the 'params' array
 
 Perform desaired operation on the array
 ```
