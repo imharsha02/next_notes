@@ -52,7 +52,7 @@ Replaces the entair history back to the root home page insted of adding new rout
 ### Navigate bsed on event
 ```javascript
 import {useRouter} from 'next/router'
-export default function (){
+export default function functionName (){
 ...
 const router= useRouter();
 function handleClick(){
