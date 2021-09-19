@@ -42,3 +42,8 @@ import Link from 'next/link'
 <Link href=`folderName/prop`><a>Clickable text</a></Link>
 ```
 The prop in the href of Link component is the formal parameter passed into the functional component
+
+### replace attribute
+Replaces the entair history back to the root home page insted of adding new route
+```javascript
+<Link href="<path to navigate>" replace><a><clickable text></a></Link>
