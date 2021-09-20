@@ -123,7 +123,8 @@ return {
   {
   params:{}
   },...
- ]
+ ],
+ fallback:false // The fallback key's value can also be true
 }
 }
 /* The getStaticPaths() function specifies for what dynamic routes must the data be displayed. The dynamic routes are specified in the params object 
