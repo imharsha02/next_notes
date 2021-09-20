@@ -130,3 +130,7 @@ return {
 /* The getStaticPaths() function specifies for what dynamic routes must the data be displayed. The dynamic routes are specified in the params object 
 which is present in the array of objects that is being returned by the async function getStaticPaths */
 ```
+
+
+
+
