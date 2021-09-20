@@ -132,5 +132,3 @@ which is present in the array of objects that is being returned by the async fun
 ```
 
 
-
-
